@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Барбершоп «Кастет»</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#top"><i class="pole"></i><b>КАСТЕТ</b> <i>barbershop</i></a>
+  <button id="burger" aria-label="Меню"><i></i><i></i><i></i></button>
+  <nav id="nav">
+    <a href="#services">Услуги</a>
+    <a href="#prices">Цены</a>
+    <a href="#booking">Запись</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <p><i>с 2016 года</i></p>
+  <h1>Стрижка, борода, <b>характер</b></h1>
+  <p>Мужской зал на Парковой: без очередей, по записи</p>
+  <a class="btn" href="#booking">Записаться</a>
+  <a class="btn ghost" href="#prices">Цены</a>
+</section>
+
+<section id="services">
+  <h2>Услуги</h2>
+  <div class="grid">
+    <article class="card"><i class="ico">01</i><h3><a href="#booking">Стрижка</a></h3><p>Машинка или ножницы, <b>мытьё</b> и укладка</p></article>
+    <article class="card"><i class="ico">02</i><h3><a href="#booking">Борода</a></h3><p>Моделирование, <b>горячее полотенце</b>, масло</p></article>
+    <article class="card"><i class="ico">03</i><h3><a href="#booking">Бритьё</a></h3><p>Опасная бритва, <i>классический ритуал</i></p></article>
+    <article class="card"><i class="ico">04</i><h3><a href="#booking">Отец и сын</a></h3><p>Две стрижки подряд со <b>скидкой 15%</b></p></article>
+  </div>
+</section>
+
+<section id="prices" class="alt">
+  <h2>Цены</h2>
+  <ul class="prices">
+    <li><a href="#booking">Мужская стрижка</a><i></i><b>1 500 ₽</b></li>
+    <li><a href="#booking">Стрижка машинкой</a><i></i><b>1 000 ₽</b></li>
+    <li><a href="#booking">Моделирование бороды</a><i></i><b>900 ₽</b></li>
+    <li><a href="#booking">Бритьё головы</a><i></i><b>1 200 ₽</b></li>
+    <li><a href="#booking">Комплекс: стрижка + борода</a><i></i><b>2 200 ₽</b></li>
+    <li><a href="#booking">Детская стрижка</a><i></i><b>900 ₽</b></li>
+  </ul>
+</section>
+
+<section id="booking">
+  <h2>Запись</h2>
+  <form id="form" novalidate>
+    <input name="name" placeholder="Ваше имя">
+    <input name="phone" placeholder="Телефон: +7 900 000-00-00">
+    <select name="service">
+      <option value="">Услуга</option>
+      <option>Мужская стрижка</option><option>Стрижка машинкой</option>
+      <option>Борода</option><option>Бритьё</option><option>Комплекс</option>
+    </select>
+    <select name="master">
+      <option value="">Мастер</option>
+      <option>Артём</option><option>Игорь</option><option>Любой свободный</option>
+    </select>
+    <input name="date" type="date">
+    <select name="time"><option value="">Время</option></select>
+    <button class="btn" type="submit">Записаться</button>
+    <p id="msg"></p>
+  </form>
+</section>
+
+<section id="contacts" class="alt">
+  <h2>Контакты</h2>
+  <p class="contacts">
+    <b>Адрес:</b> <a href="#top">г. Казань, ул. Парковая, 7</a><br>
+    <b>Телефон:</b> <a href="tel:+78435550123">+7 (843) 555-01-23</a><br>
+    <b>Время:</b> <i>ежедневно с 10:00 до 21:00</i>
+  </p>
+</section>
+
+<footer>© 2026 <b>Кастет</b> · <a href="#top">Наверх</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
